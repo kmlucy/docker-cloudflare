@@ -1,0 +1,4 @@
+auth_email="example@example.com"
+auth_key="111111111111111111111111111111111" # found in cloudflare account settings
+zone_name="example.com"
+record_name="www.example.com"
