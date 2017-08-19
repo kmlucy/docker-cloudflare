@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM arm32v6/alpine:3.6
 LABEL maintainer "Kyle Lucy <kmlucy@gmail.com>"
 
 COPY ["cloudflare-update-record.sh","config.example","/"]
