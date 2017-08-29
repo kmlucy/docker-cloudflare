@@ -11,7 +11,7 @@ docker run -d --rm --name cloudflare \
 	-v /opt/cloudflare:/config \
 	-e RUN_AS_DAEMON=1 \
 	-e DAEMON_SLEEP_TIME=600 \
-	kmlucy/docker-cloudflare
+	kmlucy/docker-cloudflare-arm32v6
 ```
 
 The default sleep time is 600 seconds.
