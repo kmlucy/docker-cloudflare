@@ -8,7 +8,7 @@ fi
 
 source config
 
-ip=$(curl -s https://wtfismyip.com/text)
+ip=$(curl -s https://ipv4.icanhazip.com)
 ip_file="ip.txt"
 id_file="id.txt"
 log_file="cloudflare.log"
