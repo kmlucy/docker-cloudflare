@@ -25,9 +25,12 @@ log "Check Initiated"
 
 if [ -f $ip_file ]; then
     old_ip=$(cat $ip_file)
-    if [ $ip == $old_ip ]; then
-        log "IP has not changed."
+    if [ -z "$ip" ]; then
+	log "No IP retrieved"
         exit 0
+    elif [ $ip == $old_ip ]; then
+        log "IP has not changed"
+	exit 0
     fi
 fi
 
